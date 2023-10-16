@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Générateur de Rapport Médical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Créateur de Rapport Médical</h1>
+        <form action="generate_report.php" method="post">
+            <label for="nom">Nom du patient:</label>
+            <input type="text" id="nom" name="nom" required><br>
+
+            <label for="date">Date du rapport:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="medecin">Nom du médecin:</label>
+            <input type="text" id="medecin" name="medecin" required><br>
+
+            <label for="remarques">Remarques:</label>
+            <textarea id="remarques" name="remarques" rows="4" required>Aucune</textarea><br>
+
+            <input type="submit" value="Générer le Rapport">
+        </form>
+    </div>
+</body>
+</html>
